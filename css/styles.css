@@ -1,0 +1,233 @@
+@keyframes color-change {
+  0%, 100% {
+    color: #ff1493;
+  }
+  25% {
+    color: #7fff00;
+  }
+  50% {
+    color: #0091EA;
+  }
+  75% {
+    color: #9400d3;
+  }
+}
+
+@keyframes Slidein {
+  0% {
+    opacity: 0;
+    transform: translate(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.fadein {
+  opacity: 0.1;
+  transform: translate(0, 50px);
+  transition: all 500ms;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.show {
+  animation: Slidein 2.0s;
+}
+
+.section-card-title {
+  font-size: 40px;
+  border-bottom: 1px solid #000;
+}
+
+.active {
+  color: #fff;
+  background-color: #000000;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.nav-animate {
+  transition: all 0.8s;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body header {
+  height: 50px;
+}
+
+body header .header-list {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+body header .header-list .header-list-child {
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+body header .header-list .header-list-child:active {
+  transition-duration: 1s;
+}
+
+body #home {
+  height: 550px;
+  background-image: url("../image/464746_s (1).jpg");
+  background-size: cover;
+  position: relative;
+}
+
+body #home .main-title h1 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  color: #fff;
+  text-shadow: 0 5px 5px black;
+  font-size: 3em;
+  text-align: center;
+}
+
+body #profile {
+  margin-top: 150px;
+}
+
+body #profile .container {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+body #profile .container img {
+  margin-top: 80px;
+}
+
+body #profile .container .profile-wrap {
+  margin-left: 30%;
+  text-align: left;
+}
+
+body #profile .container .my-name {
+  margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+body #profile .container .skillset {
+  margin-top: 80px;
+}
+
+body #profile .container .skillset .skillset-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body #profile .container .skillset .skillset-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+body #profile .container .skillset .skillset-wrap .skillset-child {
+  padding: 6px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+}
+
+body #profile .container .skillset .skillset-wrap .skillset-child:hover {
+  animation-name: color-change;
+  animation-duration: 3s;
+  animation: color-change 2s linear;
+}
+
+body #works {
+  margin: auto;
+  text-align: center;
+  margin-top: 150px;
+}
+
+body #works .container {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+body #works .container .card-introduce {
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body #works .container .works-url {
+  margin-top: 40px;
+}
+
+body #works .container .works-url:hover {
+  font-weight: bold;
+}
+
+body #contact {
+  margin: auto;
+  text-align: center;
+  margin-top: 150px;
+}
+
+body #contact .container {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+body #contact .container img {
+  margin-top: 80px;
+}
+
+body #contact .container p {
+  font-weight: bold;
+}
+
+body #contact .container .mail {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+body #contact .container .mail:hover {
+  font-weight: bold;
+}
+
+body footer {
+  background-color: #3d3a3a;
+  height: 120px;
+}
+
+body footer .footer-nav {
+  padding-top: 20px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: #fff;
+}
+
+body footer .footer-nav li:hover {
+  border-bottom: 1px solid #fff;
+}
+
+body footer h5 {
+  text-align: center;
+}

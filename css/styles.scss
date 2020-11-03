@@ -1,0 +1,225 @@
+@import 'colors.scss';
+@import 'animates.scss';
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// 横からスライドアニメーション
+.show {
+    animation: Slidein 2.0s;
+}
+
+//セクションのタイトル
+.section-card-title {
+    font-size: 40px;
+    border-bottom: 1px solid #000;
+}
+
+// ボタンhover時の色
+.active {
+    color: $white-color;
+    background-color: $black-color;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.nav-animate {
+    transition: all 0.8s;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+
+    header {
+        height: 50px;
+
+        .header-list {
+            width: 65%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            
+
+            .header-list-child {
+                padding: 10px 20px;
+                margin-right: 10px;
+
+                &:active {
+                    transition-duration: 1s;
+                }
+            }
+        }
+    }
+
+    //index.html
+    #home {
+        height: 550px;
+        background-image: url("../image/464746_s\ \(1\).jpg");
+        background-size: cover;
+        position: relative;
+        
+        .main-title {
+
+            h1 {
+                position: absolute;
+                top: 30%;
+                left: 25%;
+                color: $white-color;
+                text-shadow:0 5px 5px black;
+                font-size: 3em;
+                text-align: center;
+                
+            }
+        }
+    }
+
+
+    //profile.html
+    #profile {
+        margin-top: 150px;
+
+        .container {
+            width: 800px;
+            margin: auto;
+            text-align: center;
+
+            img {
+                margin-top: 80px;
+            }
+
+            .profile-wrap {
+                margin-left: 30%;
+                text-align: left;
+            }
+
+            .my-name {
+                margin-top: 30px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .skillset {
+                margin-top: 80px;
+
+                .skillset-title {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                
+                .skillset-wrap {
+                    display: flex;
+                    justify-content: center;
+
+
+                    .skillset-child {
+                        padding: 6px;
+                        margin-right: 10px;
+                        border: 1px solid $black-color;
+                        
+                        &:hover {
+                            animation-name: color-change;
+                            animation-duration: 3s;
+                            animation: color-change 2s linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    //works.html
+    #works {
+        margin: auto;
+        text-align: center;
+        margin-top: 150px;
+
+        .container {
+            width: 800px;
+            margin: auto;
+            text-align: center;
+
+            .card-introduce {
+                margin-top: 100px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .works-url {
+                margin-top: 40px;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+
+    //contact.html
+    #contact {
+        margin: auto;
+        text-align: center;
+        margin-top: 150px;
+
+        .container {
+            width: 800px;
+            margin: auto;
+            text-align: center;
+
+                img {
+                margin-top: 80px;
+            }
+
+            p {
+                font-weight: bold;
+            }
+
+            .mail {
+                margin-top: 50px;
+                margin-bottom: 100px;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            
+        }
+    }
+
+
+    footer {
+        background-color: rgb(61, 58, 58);
+        height: 120px;
+
+        .footer-nav {
+            padding-top: 20px;
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            color: $white-color;
+
+            li:hover {
+                border-bottom: 1px solid $white-color;
+            }
+        }
+
+        h5 {
+            text-align: center;
+        }
+    }
+
+}
+
+
+

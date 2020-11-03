@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikuto'S portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-list">
+            <div class="header-list-child"><i class="fas fa-home">Home</i></div>
+            <div class="header-list-child"><a id="top" href="#profile" class="nav-animate"><i class="fas fa-male">Profile</i></a></div>
+            <div class="header-list-child"><a href="#works"><i class="fas fa-tasks">Works</i></a></div>
+            <div class="header-list-child"><a href="#contact"><i class="fas fa-address-card">Contact</i></a></div>
+        </div>
+    </header>
+
+    <!-- home -->
+    <section id="home">
+        <div class="main-title">
+            <h1 class="show">Rikuto Sakai's Portfolio </h1>
+        </div>
+    </section>
+
+
+    <!-- 　　profile -->
+    <section id="profile">
+        <div class="container">
+            <div class="section-card-title"><i class="fas fa-male">Profile</i></div>
+            <img src="image/nh2E5GsNMqWZfo01603775231_1603775279.png" alt="profile-image">
+            <div class="profile-wrap">
+                <p>・名前：さかい　りくと（19）</p>
+                <p>・大学：関西大学社会学部</p>
+                <p>・趣味：サッカー、釣り</p>
+                <p>・活動：はじめまして。大学一年生のりくとと申します。<br>
+                　　　　Web制作、フロントエンドエンジニアに興味があり独学ですが、本<br>
+　　　　や動画などで勉強しています。<br>
+　　　　実務経験をつけて、自分のスキルを伸ばしたいと考えております。
+                　　　　
+                
+                </p>
+            </div>
+            <div class="skillset">
+                <div class="skillset-title">SkillSet</div>
+                <div class="skillset-wrap">
+                    <div class="skillset-child">HTML</div>
+                    <div class="skillset-child">CSS</div>
+                    <div class="skillset-child">SASS</div>
+                    <div class="skillset-child">jQuery</div>
+                    <div class="skillset-child">JavaScript</div>
+                </div>
+            </div>
+            <div class="skillset">
+                <div class="skillset-title">Studying</div>
+                <div class="skillset-wrap">
+                    <div class="skillset-child">Vue.js</div>
+                    <div class="skillset-child">PHP</div>
+                    <div class="skillset-child">WordPress</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- work -->
+    <section id="works">
+        <div class="container">
+            <div class="section-card-title"><i class="fas fa-tasks">Works</i></div>
+
+            <p class="card-introduce">【Vue.jsを使ってtodoリストを作りました】</p>
+            <div class="card">
+                <img src="image/2020-11-03.png" alt="イメージ画像">
+                <p>入力したらクラウドストレージに保存されます</p>
+                <div class="works-url"><a
+                        href=" https://rikurikutototo.github.io/todo-list/">https://rikurikutototo.github.io/todo-list/</a>
+                </div>
+            </div>
+
+
+            <p class="card-introduce">【架空のチョコレート屋さんのサイトを作りました】</p>
+            <div class="card">
+                <img src="image/2020-10-27 (2).png" alt="イメージ画像">
+                <p>ベルギーから日本へ上陸してきたお店をイメージしました</p>
+                <div class="works-url"><a
+                        href=" https://rikurikutototo.github.io/chocolate-site.github.io/">https://rikurikutototo.github.io/chocolate-site.github.io/</a>
+                </div>
+            </div>
+
+
+            <p class="card-introduce">【My Portfolio】</p>
+            <div class="card">
+                <img src="image/2020-10-27 (1).png" alt="イメージ画像">
+                <p>自分自身のポートフォリオサイトです。</p>
+                <div class="works-url"><a
+                        href=" https://rikurikutototo.github.io/My-Portfolio-Site.github.io/">https://rikurikutototo.github.io/My-Portfolio-Site.github.io/</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-card-title"><i class="fas fa-address-card">Contact</i></div>
+            <img src="image/cpeRZayKYC0duWR1603448112_1603448132 (1).png" alt="イメージです">
+            <p>何でも気軽にご相談ください！</p>
+            <div class="mail"><a href="yakitorinamako@icloud.com"><i
+                        class="far fa-envelope-open"></i>rikutonblog@gmail.com</a></div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <h5>©2020 陸翔 All rights reserved.</h5>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            //マウスを乗せたら発動
+            $('.header-list-child').hover(function () {
+
+                $(this).toggleClass('active');
+
+            });
+        });
+        
+        // ページスクロールの処理
+        $(function () {
+                $('a[href^="#"]').click(function () {
+                    var speed = 500; 
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                    return false;
+                });
+            });
+
+
+    </script>
+
+</body>
+
+</html>
